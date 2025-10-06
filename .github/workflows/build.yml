@@ -24,6 +24,8 @@ on:
 jobs:
   build-and-push-to-docker:
     runs-on: ubuntu-latest
+    env:
+      DEVELOCITY_URL: 'https://ge.solutions-team.gradle.com'
     steps:
       - name: Checkout
         uses: actions/checkout@v5
